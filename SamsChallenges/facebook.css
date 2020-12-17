@@ -1,0 +1,19 @@
+.users-container {
+    border: solid;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: solid;
+    text-align-last: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .imgs {
+    border-radius: 50%;
+  }
+  
