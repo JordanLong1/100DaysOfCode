@@ -1,0 +1,234 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .left-section {
+    width: 25%;
+    background-color: black;
+    color: white;
+    height: 55%;
+    border: solid 5px green;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-section {
+    width: 25%;
+    background-color: red;
+    height: 45%;
+    border: solid 5px black;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-section-two {
+    width: 25%;
+    background-color: green;
+    height: 45%;
+    border: solid 5px yellow;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .right-section {
+    width: 25%;
+    background-color: blue;
+    height: 55%;
+    border: solid 5px red;
+    text-align: center;
+    color: white;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .top-container {
+    display: flex;
+    flex-direction: space-around;
+    height: 200px;
+  }
+  
+  .left-top {
+    background-color: red;
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-top {
+    background-color: yellow;
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-top-two {
+    background-color: purple;
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .right-top {
+    background-color: green;
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .bottom-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start;
+  }
+  
+  .left-bottom {
+    width: 25%; 
+    background-color: pink; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-bottom {
+    width: 25%; 
+    background-color: pink; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-bottom-two {
+    width: 25%; 
+    background-color: pink; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .right-bottom {
+    width: 25%; 
+    background-color: pink; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .left-rail-container {
+    width: 50%; 
+    display: flex;
+    flex-direction: column; 
+  }
+  
+  .left-left-rail {
+    background-color: lightblue; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-left-middle {
+    background-color: lightblue; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-left-rail {
+    background-color: lightblue; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-left-rail-two {
+    background-color: lightblue; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .right-left-rail {
+    background-color: lightblue; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .right-rail-container {
+    width: 100%; 
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  .left-right-rail {
+    background-color: lightblue; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  
+  .middle-right-rail {
+    background-color: lightblue; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .middle-right-two {
+    background-color: lightblue; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  .right-rail {
+    background-color: lightblue; 
+    border: solid 5px black;
+    text-align: center;
+    width: 25%;
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  
+  
