@@ -1,30 +1,21 @@
 
-const getCurrHour = () => {
 
-    const divGrabber = document.getElementById('clock')
+const time = () => {
+    let divGrabber = document.getElementById('clock'); 
 
-    const d = new Date(); 
+    let d = new Date(); 
 
-    let hour = d.getHours(); 
+    let h = d.getHours(); 
+    let m = d.getMinutes(); 
+    let s = d.getSeconds(); 
 
-    let hours = document.getElementById('hours')
-    hours.textContent = hour; 
-    divGrabber.appendChild(hours)
+    let p = document.getElementById('hours'); 
 
-    getCurrMin(d, divGrabber)
+    p.textContent = h + ':' + m + ':' + s
+
+    divGrabber.appendChild(p)
+
+setTimeout(time, 1000)
 }
 
-const getCurrMin = (d, divGrabber) => {
-
-    let mins = d.getMinutes()
-
-    let minsPtag = document.getElementById('minutes'); 
-    minsPtag.textContent = mins; 
-
-    divGrabber.appendChild(minsPtag)
-    
-    getSecondOnes(d, divGrabber)
-}
-
-getCurrHour()
-getCurrMin()
+time()
