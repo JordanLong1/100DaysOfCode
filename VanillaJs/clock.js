@@ -9,7 +9,7 @@ const time = () => {
     let m = d.getMinutes(); 
     let s = d.getSeconds(); 
 
-    let p = document.getElementById('hours'); 
+    let p = document.getElementById('time'); 
 
     p.textContent = h + ':' + m + ':' + s
 
