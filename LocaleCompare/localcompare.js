@@ -8,9 +8,7 @@ The sort() method sorts the elements of an array in place and returns the sorted
 
     Say we have an array of objects, for my example I'll do 8 NFL teams. We will use .sort() to sort them by # of championships
     from most, to least. Then using the localecompare method, we will sort the teams with 0 championships to appear in alphabetical order
-
 */ 
-
 const nflTeams = [
     {name: 'Las Vegas Raiders', superBowlWins: 3 }, 
     {name: 'Denver Broncos', superBowlWins: 3 }, 
@@ -21,7 +19,6 @@ const nflTeams = [
     {name: 'Indianapolis Colts', superBowlWins: 2 }, 
     {name: 'Seattle Seahawks', superBowlWins: 1 }, 
     {name: 'San Francisco 49ers', superBowlWins: 5 }
-    // output should be steelers, 49ers, broncos, raiders, colts, seahawks, falcons, chargers, vikings
 ]
 
     const mostSuperBowlWins = nflTeams.sort((teamA, teamB) => {
