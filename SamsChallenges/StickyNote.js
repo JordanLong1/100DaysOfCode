@@ -34,7 +34,14 @@ export default function StickyNote() {
         onMouseMove={(e) => handleMouseMove(e)}
         onMouseUp={(e) => handleMouseUp(e)}
         >
-           <textarea type='text' />
+           <textarea type='text'
+             style={{
+                backgroundColor: 'yellow',
+                border: 'solid 2px blue',
+                height: '125px',
+                transform: `translate(${translateCoords.x}px, ${translateCoords.y}px)`
+              }}
+           />
         </div>
     )
 }
