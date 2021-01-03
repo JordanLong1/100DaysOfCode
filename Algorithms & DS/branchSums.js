@@ -5,7 +5,6 @@ class BinaryTree {
       this.right = null;
     }
   }
-  
   function branchSums(root) {
       let sumsList = []
       return branchSumsHelper(root, 0, sumsList)
