@@ -23,8 +23,14 @@ const employee = {
       }
     }
 
-    const {name, age, salary, address: {streetNumber, streetName, cityName, state, zip }} = employee
-    const {schedule: {clockIn, firstBreak, lunch, afternoonBreak, clockOut}} = employee
+    const {name, 
+      age, 
+      salary, 
+      address: 
+      {streetNumber, streetName, cityName, state, zip }} = employee;
+
+
+    const {schedule: {clockIn, firstBreak, lunch, afternoonBreak, clockOut}} = employee;
 
   return (
     <div className="App">
