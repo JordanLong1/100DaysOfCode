@@ -1,6 +1,5 @@
 import React from "react";
-import Schedule from './Schedule'
-export default function App() {
+import Schedule from './Schedule';
 
 const employee = {
 
@@ -23,6 +22,25 @@ const employee = {
       }
     }
 
+export default function Parent() {
+
+  const useSpreadToAddMoreInfo = () => {
+    const newInfo = {
+      jobTitle: 'Water Chemist',
+      jobDescription: 'Save lives by providing water to the people', 
+      yearsEmployed: 3
+    }
+    const newJobInfo = {...employee, newInfo }
+    const {jobTitle, jobDescription, yearsEmployed} = newInfo
+    return (
+      <>
+      <h4>{jobTitle}</h4>
+      <h4>{jobDescription}</h4>
+      <h4>{yearsEmployed}</h4>
+      </>
+    )
+}
+
     const {name, 
       age, 
       salary, 
@@ -41,7 +59,8 @@ const employee = {
      <h4> {salary}</h4>
      <h4>{streetNumber} {streetName} {cityName}, {state} {zip} </h4>
   <Schedule clockIn={clockIn} firstBreak={firstBreak} lunch={lunch} secondBreak={afternoonBreak} leave={clockOut}/>
-
+  <h2>More Employee Info</h2>
+      <div>{useSpreadToAddMoreInfo()} </div>
     </div>
   );
 }
