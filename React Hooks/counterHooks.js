@@ -5,10 +5,10 @@ import React, {useState, useEffect} from 'react';
 
 export default function counterHooks() {
 
-    const getInitialCount = () =>  Number(window.localStorage.getItem('count') || 0);
 
-
-    const [count, setCount] = useState(getInitialCount);
+    const [count, setCount] = useState(() => {
+        Number(window.localStorage.getItem('count') || 0);
+    });
 
     const incrementCount = () => setCount(count + 1);
     
