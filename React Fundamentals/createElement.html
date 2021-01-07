@@ -1,0 +1,29 @@
+
+<body>
+    <div id='root'></div>
+  
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+  
+    <script type='module'>
+      const rootEle = document.getElementById('root'); 
+  
+      
+      let hello = React.createElement('span', {
+        className: 'span1',
+        children: 'Hello'
+      }); 
+      
+      
+      let world = React.createElement('span', {
+        className: 'span2',
+        children: 'World'
+      }); 
+      const container = React.createElement('div', {
+        className: 'container',
+        children: [hello, , world]
+      })
+      
+      ReactDOM.render(container, rootEle);
+    </script>
+  </body>
