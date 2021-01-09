@@ -84,5 +84,40 @@ const nbaPlayers = [
     // and ->  {name: 'Jamal Murray', number: 23, team: 'Denver Nuggets', style: 'Shooter'},
     // in a new array
   }
-  
   filterByNum()
+
+  const merge = () => {
+
+    //The concat() method is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+    let nbaTeams = ['Sacramento Kings', 'Washington Wizards', 'Chicago Bulls', 'Houston Rockets', 'Phoenix Suns']
+    let nbaTeamsCities = ['Sacramento', 'Washington', 'Chicago', 'Houston', 'Phoenix']
+
+    const teamsAndCties = nbaTeams.concat(nbaTeamsCities); 
+
+    return teamsAndCties;
+    //output -> [Sacramento Kings, Washington Wizards, Chicago Bulls, Houston Rockets, Phoenix Suns, Sacramento, Washington, Chicago, Houston, Phoenix]
+
+  }
+
+  const each = () => {
+    //The forEach() method executes a provided function once for each array element.
+    const listOfPlayersByName = nbaPlayers.forEach(player => player.name);
+
+    return listOfPlayersByName
+    // output -> list of nba players from the array of objects by name. *** DOESNT RETURN A NEW ARRAY
+  }
+
+  const popOff = () => {
+    //The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+    return nbaPlayers.pop(); 
+    // will remove Tyrese Haliburton object from the array of objects and return that object. 
+    /*
+{
+  name: 'Tyrese Haliburton',
+  number: 0,
+  team: 'Sacramento Kings',
+  style: 'Rookie, can do it all. Lengthy on defense and distributes niceky.'
+}
+    */
+
+  }
