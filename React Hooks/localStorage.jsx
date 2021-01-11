@@ -2,19 +2,25 @@
 
 import * as React from 'react'
 
-function Greeting({initialName = ''}) {
-
-  console.log('rendering greeting')
-  const [name, setName] = React.useState(() => window.localStorage.getItem('name') || initialName)
-
-
+function useLocalStorageState(key, initialName) {
+  const [name, setName] = React.useState(() => window.localStorage.getItem(key) || initialName)
+  
+  
   React.useEffect(() => {
-    console.log('useEffect is running')
-    window.localStorage.setItem('name', name)
-  }, [name])
+    window.localStorage.setItem(key, name)
+  }, [name, key])
+
+  return [name, setName]
+
+}
+
+
+function Greeting({initialName}) {
+
+  const [name, setName] = useLocalStorageState('name', initialName) // -> 'name' is the key arg, initalName = Kent from App in the useLocalStorage hook
+  
 
   function handleChange(event) {
-    console.log('hello')
     setName(event.target.value)
   }
   return (
@@ -30,8 +36,7 @@ function Greeting({initialName = ''}) {
 }
 
 function App() {
-  const [count, setCount] = React.useState(0)
-  return <> <button onClick={() => setCount(prevCount => prevCount + 1)}>{count}</button><Greeting /> </>
+  return <Greeting initialName='Kent'/>
 }
 
 export default App
